@@ -5,7 +5,11 @@ const HeaderFn = () => <header>Moja pierwsza strona w React</header>;
 
 class HeaderCl extends Component {
   render() {
-    return <header>Moja pierwsza strona w React</header>;
+    return (
+      <header style={{ fontSize: "32px", color: "blue" }}>
+        Moja pierwsza strona w React
+      </header>
+    );
   }
 }
 
