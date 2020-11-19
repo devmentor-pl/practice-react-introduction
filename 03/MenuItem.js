@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const MenuItem = (props) => {
   const { text, url } = props;
   return (
-    <li>
+    <li key={text}>
       <a href={url}>{text}</a>
     </li>)
 }
