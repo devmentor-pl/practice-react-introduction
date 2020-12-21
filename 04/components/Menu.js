@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from '../../03/components/MenuItem';
-const Menu = () => {
+
+const Menu = (props) => {
   return (
     <ul>
-      <MenuItem text='home' url='/' />
-      <MenuItem text='kontakt' url='/contact' />
+      {props.items.map((item) => {
+        return <MenuItem text={item.text} url={item.url} />;
+      })}
     </ul>
   );
 };
