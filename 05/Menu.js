@@ -5,15 +5,7 @@ import MenuItem from "C:/Users/grzeg/practice-react-introduction/03/MenuItem.js"
 const home = {url:"/", text: "home"};
 const contact = {url:"/contact", text: "kontakt"};
 
-class Nav extends React.Component {
-    render() {
-        return <nav>
-                    <Menu/>
-                </nav>
-    }
-}
-
-class Menu extends React.Component {
+export default class Menu extends React.Component {
     render() {
         return <ul>
                 <MenuItem { ... home }/>
@@ -22,7 +14,5 @@ class Menu extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Nav/>,
-    document.querySelector("#root")
-)
+
+   
