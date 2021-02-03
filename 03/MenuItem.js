@@ -4,16 +4,15 @@ import ReactDOM from 'react-dom';
 class MenuItem extends React.Component {
     render() {
         const {url, text} = this.props;
-        return <ul url = {url}> {text}
-                        <li>
-                            <a>
-
-                            </a>
-                        </li>
-                </ul>
+        return <li> 
+                    <a href = {url}>
+                    {text}
+                    </a>
+                </li>
+                
 }   }
 
 const Element = () => 
-<MenuItem text="kontakt" url="/contact"/>;
+<MenuItem url="/contact" text="kontakt"/>;
 
-export default Element;
+export default MenuItem;
