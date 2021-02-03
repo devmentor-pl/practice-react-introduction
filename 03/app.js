@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Element from "./MenuItem.js"
+import MenuItem from "./MenuItem.js"
+
+const Element = () => 
+<MenuItem url="/contact" text="kontakt"/>;
 
 ReactDOM.render(
     <Element/>,
