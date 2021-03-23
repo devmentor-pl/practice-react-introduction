@@ -2,7 +2,7 @@ import React from 'react';
 
 class MenuItem extends React.Component {
     render() {
-        return <li>{this.props.text} <a>{this.props.url}</a></li>
+        return <li><a href={this.props.url}>{this.props.text}</a></li>
     }
 }
 
