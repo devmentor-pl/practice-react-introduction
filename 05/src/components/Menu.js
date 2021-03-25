@@ -3,20 +3,11 @@ import MenuItem from './MenuItem';
 
 
 
-// Need help ! :< 
-const arr = [<MenuItem text="home" url="/" />, <MenuItem text="kontakt" url="/contact"/>];
-
-const arr2 = arr.map((el) => {
-    const {text, url} = el.props;
-    return text, url;
-});
-
-console.log(arr2);
 class Menu extends React.Component {
     render() {
+        const list = this.props.items.map((item) => <MenuItem text={item.text} url={item.url}/>);
         return <ul> 
-                    <MenuItem text="home" url="/" />
-                    <MenuItem text="kontakt" url="/contact" />
+                    {list}
                 </ul>
     }
 }
