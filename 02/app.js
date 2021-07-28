@@ -7,3 +7,27 @@
 // Wspomiany komponent ma renderować znacznik <header/> z napisam Moja pierwsza strona w React.
 
 // Dodatkowo spróbuj mu nadać fajny wygląd przy pomocy właściwości .style.
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <header
+    className='myClass'
+    style={ {border: '2px solid grey'} }
+    >Moja pierwsza strona w React.</header>,
+    document.querySelector('#root')
+);
+
+// const myStyles = {
+//     border: '2px solid grey',
+//     backgroundColor: 'pink',
+// }
+
+// ReactDOM.render(
+//     <header
+//         className='myClass'
+//         style={myStyles}
+//     >Moja pierwsza strona w React.</header>,
+//     document.querySelector('#root')
+// );
