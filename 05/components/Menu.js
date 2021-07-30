@@ -3,10 +3,10 @@ import MenuItem from './MenuItem';
 
 class Menu extends React.Component {
     render() {
+        const itemList = this.props.items.map((item) => <MenuItem text={item.text} url={item.url}/>);
         return (
             <ul>
-                <MenuItem text="strona główna" url="/" />
-                <MenuItem text="www" url="/www" />
+                {itemList}
             </ul>
         )
     }
