@@ -13,7 +13,8 @@ export class MenuItem extends React.Component {
     }
 }
 
+/*
 MenuItem.propTypes = {
     text: PropTypes.string,
     url: PropTypes.string,
-};
+};*/
