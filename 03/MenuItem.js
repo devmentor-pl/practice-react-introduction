@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 export class MenuItem extends React.Component {
     render() {
@@ -11,3 +12,8 @@ export class MenuItem extends React.Component {
         );
     }
 }
+
+MenuItem.propTypes = {
+    text: PropTypes.string,
+    url: PropTypes.string,
+};
