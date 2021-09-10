@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 import MenuItem from './components/MenuItem'
 
 
-const App = () => <MenuItem text="kontakt" url="/contact"/>
+const App = () => { 
+    return (
+        <ul>
+            <MenuItem text="kontakt" url="/contact"/>
+        </ul>
+    )
+}
+        
 
 ReactDOM.render(
     <App/>,
