@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './'
+import Nav from './Components/Menu'
 
 
 ReactDOM.render(
