@@ -12,8 +12,14 @@ const style = {
 
 const text = 'Moja pierwsza strona w React';
 
-const Header = () => (
-    <header style = {style}>{text}</header>
-);
+// const Header = () => (
+//     <header style = {style}>{text}</header>
+// );
+
+class Header extends React.Component {
+    render() {
+        return <header style = {style}>{text}</header>
+    }
+}
 
 export default Header;
