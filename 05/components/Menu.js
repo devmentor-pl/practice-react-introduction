@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItems from "./MenuItems"
+import MenuItem from "./MenuItem"
 
 
 class Menu extends React.Component {
@@ -10,7 +10,7 @@ class Menu extends React.Component {
                 {
                     items.map((el) => {
                         const {text, url} = el;
-                        return <MenuItems text={text} url={url} />
+                        return <MenuItem text={text} url={url} />
                     })
                 }
             </ul>

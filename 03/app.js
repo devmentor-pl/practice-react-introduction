@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MenuItems from "./components/MenuItems";
+import MenuItem from "./components/MenuItem";
 
 ReactDOM.render(
-    <MenuItems text="kontakt" url ="/contact/"/>,
+    <ul>
+        <MenuItem text="kontakt" url ="/contact/"/>
+    </ul>,
     document.querySelector('#root') 
 );

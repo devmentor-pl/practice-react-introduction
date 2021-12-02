@@ -1,11 +1,11 @@
 import React from "react";
-import MenuItems from "../../03/components/MenuItems"
+import MenuItem from "../../03/components/MenuItem"
 
 const Menu = () => 
-    <>
-            <MenuItems text="home" url="/" />
-            <MenuItems text="kontakt" url="/contact" />
-    </>
+    <ul>
+            <MenuItem text="home" url="/" />
+            <MenuItem text="kontakt" url="/contact" />
+    </ul>
 
 
 export default Menu;

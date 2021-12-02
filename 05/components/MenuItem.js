@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-class MenuItems extends React.Component{
+class MenuItem extends React.Component{
     render() {
         return (
             <li>
@@ -11,9 +11,9 @@ class MenuItems extends React.Component{
     }
 }
 
-MenuItems.propTypes = {
+MenuItem.propTypes = {
     text: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
 }
 
-export default MenuItems;
+export default MenuItem;
