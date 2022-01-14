@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
+import PropTypes from "prop-types";
 
 const menuArr = [
   { text: "strona główna", url: "/" },
@@ -12,6 +13,11 @@ const Nav = () => {
       <Menu menuArr={menuArr} />
     </nav>
   );
+};
+
+Nav.propTypes = {
+  url: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Nav;

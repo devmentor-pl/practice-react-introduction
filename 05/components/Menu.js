@@ -1,6 +1,4 @@
 import React from "react";
-// import MenuItem from "./MenuItem";
-import PropTypes from "prop-types";
 
 const Menu = (props) => {
   const menuArr = props.menuArr;
