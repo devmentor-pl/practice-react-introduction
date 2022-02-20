@@ -9,6 +9,7 @@ const Menu = () => (
         <MenuItem text="kontakt" url="/contact"/>
     </ul>
 )
+
 const Nav = () => <nav><Menu/></nav>
 
 ReactDOM.render(<Nav/>,document.querySelector("#root"));
