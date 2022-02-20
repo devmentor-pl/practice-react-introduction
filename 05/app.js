@@ -7,8 +7,6 @@ ReactDOM.render(
     <Nav/>, document.querySelector('#root')
 );
 
-
-// probowałam zrobic zadanie dodatkowe ale nie wiem jak rozbic to na 2 komponenty, wszystko w Nav siedzi
 ReactDOM.render(
     <Nav2/>, document.querySelector('#root2')
 )
