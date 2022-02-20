@@ -8,7 +8,7 @@ ReactDOM.render(
 );
 
 
-// probowałam zrobic zadanie dodatkowe ale nie wyszło ... Nav2 i Menu2
+// probowałam zrobic zadanie dodatkowe ale nie wiem jak rozbic to na 2 komponenty, wszystko w Nav siedzi
 ReactDOM.render(
     <Nav2/>, document.querySelector('#root2')
 )

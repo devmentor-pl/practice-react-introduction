@@ -6,10 +6,14 @@ const Nav2 = () => (
         <Menu2
             items={[
                 {text: 'strona główna', url: '/'},
-                {text: 'www', url: '/www'}
+                {text: 'o nas', url: '/o-nas'},
+                {text: 'oferta', url: '/oferta'},
+                {text: 'blog', url: '/blog'},
+                {text: 'kontakt', url: '/kontakt'}
             ]}
         />
-    </nav>
+</nav>
 )
 
 export default Nav2;
+

@@ -2,12 +2,16 @@ import React from 'react';
 
 class Menu2 extends React.Component{
     render(){
-        const {text, url} = this.props;
-        return(
+        return (
             <ul>
-                <li>
-                    <a href={url}>{text}</a>
-                </li>
+            {this.props.items.map((item) => {
+                return (
+                    <li>
+                        <a href ={item.url}>{item.text}</a>
+                    </li>
+                    )
+                })
+            }
             </ul>
         )
     }
