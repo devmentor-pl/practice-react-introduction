@@ -1,3 +1,4 @@
+import { object } from 'prop-types';
 import React from 'react';
 
 class Menu2 extends React.Component{
@@ -15,6 +16,7 @@ class Menu2 extends React.Component{
                 )
             })
         }
+        return console.log('test');
     }
 }
 
