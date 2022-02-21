@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 class MenuItem extends React.Component{
     render(){
+        const {text,url} = this.props;
         return(
             <li>
-                <a href={this.props.url}>{this.props.text}</a>
+                <a href={url}>{text}</a>
             </li>
         )
     }
