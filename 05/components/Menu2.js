@@ -1,4 +1,3 @@
-import { object } from 'prop-types';
 import React from 'react';
 
 class Menu2 extends React.Component{
@@ -7,17 +6,17 @@ class Menu2 extends React.Component{
             <ul>{this.renderItems()}</ul>
         )
     }
+
     renderItems(){
-        {this.props.items.map((item) => {
-            return (
-                <li>
-                    <a href ={item.url}>{item.text}</a>
-                </li>
-                )
-            })
-        }
-        return console.log('test');
+        return(
+            <li>
+                {this.props.items.map((item) => {
+                <a href ={item.url}>{item.text}</a>})
+                }
+            </li>
+        )
     }
+
 }
 
 export default Menu2;
