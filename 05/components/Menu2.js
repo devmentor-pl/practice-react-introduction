@@ -8,15 +8,19 @@ class Menu2 extends React.Component{
     }
 
     renderItems(){
-        return(
-            <li>
+        return (
+            <>
                 {this.props.items.map((item) => {
-                <a href ={item.url}>{item.text}</a>})
-                }
-            </li>
+                    return(
+                        <li>
+                            <a href ={item.url}>{item.text}</a>
+                        </li>
+                    )
+                })
+            }
+            </>
         )
     }
-
 }
 
 export default Menu2;
