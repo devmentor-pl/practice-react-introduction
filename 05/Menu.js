@@ -2,17 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { MenuItem } from "../03/MenuItem";
 
-class Nav extends React.Component {
-    render() {
-        return (
-            <nav>
-                <Menu />
-            </nav>
-        );
-    }
-}
-
-class Menu extends React.Component {
+/*export class Menu extends React.Component {
     render() {
         return (
             <ul>
@@ -21,12 +11,17 @@ class Menu extends React.Component {
             </ul>
         );
     }
-}
+}*/
 
-class App extends React.Component {
+export class Menu extends React.Component {
     render() {
-        return <Nav />;
+        const arr = this.props.items;
+        return (
+            <ul>
+                {arr.map((m) => (
+                    <MenuItem text={m.text} url={m.url} />
+                ))}
+            </ul>
+        );
     }
 }
-
-ReactDOM.render(<App />, document.querySelector("#root"));
