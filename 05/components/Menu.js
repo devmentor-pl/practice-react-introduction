@@ -9,7 +9,7 @@ const Menu = (props) => {
             <MenuItem text='Home' url='https://www.prezydent.pl/'/>
             <MenuItem text='Andrzej Duda' url='https://www.prezydent.pl/kontakt'/>
             {items.map((item) => {
-                return <li {...item}>tekst</li>
+                return <MenuItem {...item}/>
             })}
         </ul>
     )
