@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MenuItem extends React.Component {
     render() {
@@ -9,6 +10,11 @@ class MenuItem extends React.Component {
             </li>
         )
     }
+}
+
+MenuItem.propTypes = {
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string,
 }
 
 export default MenuItem;
