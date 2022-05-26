@@ -5,7 +5,7 @@ class MenuItem extends React.Component {
      const {text, url} = this.props
  return (
     <li> 
-        <a url= {url} > {text} </a>
+        <a href = {url} > {text} </a>
     </li>
     )
  }
