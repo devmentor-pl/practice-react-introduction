@@ -1,7 +1,7 @@
 {
   "name": "practice-es2015plus",
   "version": "1.1.0",
-  "description": "",
+  "description": "> :dart: *Chcę mieć absolutną pewność, że **darmowe materiały**, które publikuję, spełniają Twoje oczekiwania. Dlatego oferuję Ci ebooka o wartości 39 PLN: `Jak zostać programistą? SKUTECZNY PRZEWODNIK` w zamian za [wypełnienie ankiety](https://devmentor.pl/ankieta).*",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "filipdrzazga",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -18,12 +18,20 @@
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
     "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipDrzazga/practice-react-introduction.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FilipDrzazga/practice-react-introduction/issues"
+  },
+  "homepage": "https://github.com/FilipDrzazga/practice-react-introduction#readme"
 }
