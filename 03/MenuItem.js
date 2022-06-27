@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from 'prop-types'
 
 const MenuItem = ({ text, url }) => {
-    const list = [{text:text,url:url},{text:text,url:url}]
     return (
         <>
-            {list.map((el) => { (<li><a href={el.url}>{el.text}</a></li>)})}
+            <li><a href={url}>{text}</a></li>
         </>
     );
 };
