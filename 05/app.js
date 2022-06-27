@@ -2,11 +2,7 @@ console.log('zad 5')
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Menu from './Menu';
-
-const Nav = () => (
-    <Menu />
-)
+import Nav from './Nav';
 
 ReactDOM.render(
     <div>

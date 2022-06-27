@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-const MenuItem = (props) => {
-    const { text, url } = props
+const MenuItem = ({text, url}) => {
     console.log(text, url)
     return (
         <ul>
             <li>
                 <a
                     style={{ textDecoration: 'none', 
-                    color: 'red' }}
+                    color: 'green' }}
                     href={url}
                 >
                     {text}
