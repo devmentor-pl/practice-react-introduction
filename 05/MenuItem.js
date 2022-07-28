@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 const MenuItem = ({text, url}) => {
     console.log(text, url)
     return (
-        <ul>
             <li>
                 <a
                     style={{ textDecoration: 'none', 
@@ -14,7 +13,6 @@ const MenuItem = ({text, url}) => {
                     {text}
                 </a>
             </li>
-        </ul>
     )
 }
 MenuItem.propTypes = {
