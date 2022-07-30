@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MenuItem from '../03/MenuItem';
+import PropTypes from 'prop-types';
 
 class Menu extends React.Component {
     render() {
@@ -16,6 +17,10 @@ class Menu extends React.Component {
             </ul>
         )
     }
+}
+
+Menu.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Menu;
