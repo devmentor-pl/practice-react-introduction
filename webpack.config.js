@@ -1,4 +1,4 @@
-const taskNumber = '';
+const taskNumber = '01';
 //numer przerabianego zadania
 
 const path = require('path');
@@ -28,6 +28,9 @@ module.exports = {
             }
         ]
         // obecnie brak dodatkowych ustawień
+    },
+    devServer: {
+        static: './',
     },
     plugins: [
         new HtmlWebpackPlugin({
