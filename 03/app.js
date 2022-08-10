@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import MenuElement from "./Menu.js"
+import MenuElement from "./MenuElement.js"
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
             <MenuElement text="portfolio" url="#portfolio" />
             <MenuElement text="gallery" url="#gallery" />
         </>
-        
+
     )
 }
 
