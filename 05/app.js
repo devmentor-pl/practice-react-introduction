@@ -1,13 +1,16 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Nav from "../04/Nav.js"
+import Nav from "./Nav.js"
 
 
 const App = () => {
-    return Nav()
+    return (
         
-   
-    }
+            <Nav />
+     
+    )
+
+}
 
 ReactDOM.render(
     App(),
