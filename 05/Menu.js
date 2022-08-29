@@ -11,24 +11,22 @@ import MenuItem from '../03/MenuItem';
 // };
 
 const Menu = (props) => {
-	const { items } = props;
-	return (
-		<ul>
-			{
-				items.map(
-					item => {
-						const { text, url } = item;
-						return <MenuItem text={text} url={url} />
-					}
-				)
-			}
-		</ul>
-	)
+    const { items } = props;
+    return (
+        <ul> {
+            items.map(
+                item => {
+                    const { text, url } = item;
+                    return <MenuItem text={text} url={url} />
+                })
+        }
+        </ul>
+    )
 }
 
-MenuItem.PropTypes = {
-	text: PropTypes.string.isRequired,
-	url: PropTypes.string.isRequired,
-};
+// MenuItem.PropTypes = {
+// 	text: PropTypes.string.isRequired,
+// 	url: PropTypes.string.isRequired,
+// };
 
 export default Menu;
