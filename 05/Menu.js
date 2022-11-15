@@ -1,6 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import MenuItem from '../03/MenuItem'
+import MenuItem from './MenuItem'
 
 const Menu = props => {
     return (
@@ -16,16 +15,4 @@ const Menu = props => {
     )
 }
 
-const Nav = () => {
-    return (
-        <nav>
-            <Menu />
-        </nav>
-    )
-}
-
-
-ReactDOM.render(
-    <Nav />,
-    document.querySelector('#root')
-)
+export default Menu
