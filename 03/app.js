@@ -6,7 +6,7 @@ ReactDOM.render(
     <ul>
         <MenuItem
             text={'Kontakt'}
-            url={'contact'} />
+            url={'#'} />
     </ul>,
     document.querySelector('#root')
 )
