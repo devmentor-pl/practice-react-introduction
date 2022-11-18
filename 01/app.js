@@ -1,4 +1,4 @@
 ReactDOM.render(
-    React.createElement('h1', null, 'React działa!'),
+    <h1>React działa!</h1>,
     document.querySelector('#root')
 )
