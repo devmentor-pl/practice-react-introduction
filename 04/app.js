@@ -4,10 +4,12 @@ import MenuItem from "../03/MenuItem";
 
 class Menu extends React.Component{
     render(){
-        return <ul>
-            <MenuItem text="home" url="/"></MenuItem>
-            <MenuItem text="kontakt" url="/"></MenuItem>
+        return (
+            <ul>
+                <MenuItem text="home" url="/"></MenuItem>
+                <MenuItem text="kontakt" url="/"></MenuItem>
             </ul>
+        );
     }
 }
 
