@@ -5,6 +5,6 @@ import Nav from "./components/Nav";
 
 
 ReactDOM.render(
-    <Nav class="nav"></Nav>,
+    <Nav class="nav"/>,
     document.querySelector('#root')
 )

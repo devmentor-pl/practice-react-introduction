@@ -2,15 +2,21 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 class Menu extends React.Component{
-    render(){
-   
-        return <ul className={this.props.class}>
-            {this.props.elements.map((element, index) => 
+    renderElements(){
+        return (
+            this.props.elements.map((element, index) => 
                 <li key={index}>
                     <a src={element.url}>{element.text}</a>
                 </li>
-            )}
-        </ul>
+            )
+        )
+    }
+    render(){
+        return (
+            <ul className={this.props.class}>
+                {this.renderElements()}
+            </ul>
+        )
     }
 }
 
