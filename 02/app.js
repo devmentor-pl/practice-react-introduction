@@ -1,6 +1,6 @@
 //Style
 
-const functionStyle = {
+const myStyle = {
     border: '3px solid black',
     backgroundColor: 'yellow',
     color:'red',
@@ -9,49 +9,38 @@ const functionStyle = {
 
 
 
-//Rozwiązanie przy wykorzystaniu funkcji
+
+
+
+//Rozwiązanie 
 
 import React from 'react';
-import {createRoot} from 'react-dom/client';
+import ReactDOM  from 'react-dom';
 
-const root = createRoot(document.querySelector('#root'));
+function HeaderFn() {
+    return <header>Moja pierwsza strona w React  (funckja)</header>;
+}
 
-const getText = () => 'Moja pierwsza strona w React !';
+class HeaderCl extends React.Component {
+    render() {
+        return <header>Moja pierwsza strona w React (klasa)</header>;
+    }
+}
 
-root.render(
-    <headerFn
-        style ={functionStyle}
-    >
-        {getText()}
-    </headerFn>
+
+ReactDOM.render(
+    <section>
+        <HeaderFn></HeaderFn>
+        <HeaderCl></HeaderCl>
+    </section>,
+    document.querySelector('#root')
 );
 
 
 
 
 
-//Rozwiązanie z klasami ES2015
 
-/*import React from 'react';
-import {createRoot} from 'react-dom/client';
-
-const root = createRoot(document.querySelector('#root'));
- 
-class Text {
-    constructor() {
-        this.words = 'Moja pierwsza strona w React!';
-    }
-} 
-
-const newText = new Text();
-
-root.render(
-    <header>
-       
-    </header>
-
-)
-*/
     
 
 
