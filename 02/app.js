@@ -3,13 +3,15 @@ import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.querySelector('#root'));
 
-const HeaderFn = () => {
-	return <header style={myStyles}>Moja pierwsza strona w React</header>;
+const HeaderFn = (props) => {
+	const { styles } = props;
+	return <header style={styles}>Moja pierwsza strona w React</header>;
 };
 
 class HeaderCl extends React.Component {
 	render() {
-		return <header style={myStyles}>Moja pierwsza strona w React</header>;
+		const { styles } = this.props;
+		return <header style={styles}>Moja pierwsza strona w React</header>;
 	}
 }
 
@@ -26,7 +28,7 @@ const myStyles = {
 
 root.render(
 	<>
-		<HeaderCl />
-		<HeaderFn />
+		<HeaderCl styles={myStyles} />
+		<HeaderFn styles={myStyles} />
 	</>
 );
