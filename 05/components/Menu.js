@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import MenuItem from "./MenuItem";
 
 class Menu extends React.Component {
     render() {
         const menuItems = this.props.item.map(prop =>
-            <li><a href={prop.url}>{prop.text}</a></li>
+            <MenuItem text={prop.text} url={prop.url} />
         );
 
         return (
