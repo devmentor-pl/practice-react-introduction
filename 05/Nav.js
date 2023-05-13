@@ -9,7 +9,8 @@ class Nav extends React.Component {
                 <Menu items={[
                     {text: 'strona główna', url: '/'}, 
                     {text: 'www', url: '/www'},
-                    {text: 'galeria', url: '/www'}
+                    {text: 'galeria', url: '/www'},
+                    {text: 'kontakt', url: '/www'}
                 ]}/>
             </nav>
         )
