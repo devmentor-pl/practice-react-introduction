@@ -1,12 +1,20 @@
-import React from 'react'
-import Menu from './Menu'
+import React from "react";
+import Menu from "./Menu";
 
-const Nav = () => {
-  return (
-    <nav>
-      <Menu />
-    </nav>
-  );
+class Nav extends React.Component {
+  render(){
+     return (
+       <nav>
+         <Menu
+           items={[
+             { text: "strona główna", url: "/" },
+             { text: "www", url: "/www" },
+           ]}
+         />
+       </nav>
+     );
+  }
+ 
 };
 
-export default Nav
+export default Nav;

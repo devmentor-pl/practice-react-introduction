@@ -1,14 +1,14 @@
 import React from "react";
-import MenuItem from "./MenuItem"
+import MenuItem from "./MenuItem";
 
+class Menu extends React.Component {
+  render() {
+    const list = this.props.items.map((item) => {
+      return <MenuItem text={item.text} url={item.url} />;
+    });
 
-const Menu = () => {
-  return (
-    <ul>
-      <MenuItem text="home" url="/" />
-      <MenuItem text="kontakt" url="/contact" />
-    </ul>
-  );
-};
+    return <ul>{list}</ul>;
+  }
+}
 
-export default Menu
+export default Menu;
