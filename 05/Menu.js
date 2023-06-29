@@ -1,18 +1,17 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-const Menu = () => {
+const Menu = ({ items }) => {
   return (
     <ul>
-      <MenuItem
-        listItemClass="list-item"
-        listItemlink="/"
-        listItemLinkText="Home"
-      />
-      <MenuItem
-        listItemClass="list-item"
-        listItemlink="/contact"
-        listItemLinkText="Kontakt"
-      />
+      {items.map((item, index) => {
+        return (
+          <MenuItem
+            key={index}
+            url={item.url}
+            text={item.text}
+          />
+        );
+      })}
     </ul>
   );
 };
