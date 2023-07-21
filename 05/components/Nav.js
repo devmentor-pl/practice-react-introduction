@@ -4,9 +4,12 @@ import Menu from './Menu'
 const Nav = () => {
     return (
         <nav>
-            <Menu />
+            <Menu items={[
+                { text: 'strona główna', url: '/' },
+                { text: 'www', url: '/www' }
+            ]} />
         </nav>
     )
 }
 
-export default Menu
+export default Nav
