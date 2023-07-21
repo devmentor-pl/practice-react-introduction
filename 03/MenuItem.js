@@ -10,7 +10,7 @@ import React from "react"
 //     }
 // }
 
-const Header = props => {
+const MenuItem = props => {
     return (
         <li>
             <a href={props.url}>{props.text}</a>
@@ -18,4 +18,4 @@ const Header = props => {
     )
 }
 
-export default Header
+export default MenuItem
