@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuItem from '../03/MenuItem'
+import PropTypes from 'prop-types'
 
 
 const Menu = (props) => {
@@ -15,6 +16,10 @@ const Menu = (props) => {
       {list}
     </ul>
   )
+}
+
+Menu.propTypes = {
+  item: PropTypes.object
 }
 
 export default Menu
