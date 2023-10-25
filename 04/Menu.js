@@ -1,17 +1,22 @@
 import React from "react";
-import MenuItem from "../03/MenuItem.js"
-const Menu = (props) => {
-  const {items, jsx} = props;
-  console.log(items)
-  const renderItems = items.map(item => <li>{item}</li>)
+import MenuItem from "../03/MenuItem.js";
+import PropTypes from 'prop-types'
+const Menu = props => {
+  const {items} = props;
+  // const {text, url} = items;
+   const listItems = items.map(item => <li><a href={item.url}>{item.text}</a></li>)
+   const jsx = <ul> { listItems } </ul>;
     return (
-      <ul>
-        {renderItems}
-      </ul>
+      <>{jsx}</>
       // <ul>
       //     <MenuItem text="home" url="/"/>
       //     <MenuItem text="kontakt" url="/contact"/>
       // </ul>
     );
+    
   };
+  Menu.PropTypes = {
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  }
   export default Menu;
