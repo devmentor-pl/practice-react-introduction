@@ -2,8 +2,7 @@ import React from "react";
 import MenuItem from "../03/MenuItem.js";
 import PropTypes from 'prop-types'
 const Menu = props => {
-  const {items} = props;
-  // const {text, url} = items;
+  const { items } = props;
    const listItems = items.map(item => <li><a href={item.url}>{item.text}</a></li>)
    const jsx = <ul> { listItems } </ul>;
     return (
@@ -15,8 +14,7 @@ const Menu = props => {
     );
     
   };
-  Menu.PropTypes = {
-    text: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
+  Menu.propTypes = {
+   items: PropTypes.array.isRequired
   }
   export default Menu;
