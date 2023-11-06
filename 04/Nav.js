@@ -3,9 +3,13 @@ import React from 'react';
 import Menu from './Menu';
 
 const Nav = () => {
+  const menuItems = [
+    { text: 'strona główna', url: '/' },
+    { text: 'www', url: '/www' },
+  ];
   return (
     <nav>
-      <Menu />
+      <Menu menuItems={menuItems} />
     </nav>
   );
 };
