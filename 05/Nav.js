@@ -1,17 +1,16 @@
 import React from 'react';
 import Menu from './Menu';
 
-const ulEl = {
-  display: 'flex',
-  backgroundColor: '#1d3557',
-};
-
 export const Nav = () => {
   return (
-    <ul style={ulEl}>
-      <Menu text='home' url='/' />
-      <Menu text='kontakt' url='/contact' />
-    </ul>
+    <nav>
+      <Menu
+        items={[
+          { text: 'strona główna', url: '/' },
+          { text: 'www', url: '/www' },
+        ]}
+      />
+    </nav>
   );
 };
 

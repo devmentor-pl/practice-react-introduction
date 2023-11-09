@@ -1,28 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Menu from '../04/Menu';
 
-const liEl = {
-  listStyleType: 'none',
-  padding: '20px',
-  textAlign: 'center',
+const ulEl = {
+  display: 'flex',
+  backgroundColor: '#1d3557',
 };
 
-const myStyles = {
-  textDecoration: 'underline overline #e63946',
-  color: '#f1faee',
-  letterSpacing: '2px',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-};
-
-export const Menu = ({ text, url }) => {
-  return (
-    <li style={liEl}>
-      <a style={myStyles} href={url}>
-        {text}
-      </a>
-    </li>
-  );
+export const Menu05 = ({ items }) => {
+  const arr = items.map((item) => {
+    return <Menu text={item.text} url={item.url} />;
+  });
+  return <ul style={ulEl}>{arr}</ul>;
 };
 
 Menu.propTypes = {
@@ -30,4 +19,4 @@ Menu.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-export default Menu;
+export default Menu05;
