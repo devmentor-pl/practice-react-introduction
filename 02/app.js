@@ -4,7 +4,9 @@ import GetHeader from './HeaderFn';
 import GetHeaderCl from './HeaderCl';
 
 ReactDOM.render(
-  //   <GetHeader text='Moja pierwsza strona w React' />,
-  <GetHeaderCl text='Moja pierwsza strona w React Cl' />,
+  <div>
+    <GetHeader text='Moja pierwsza strona w React' />
+    <GetHeaderCl text='Moja pierwsza strona w React Cl' />
+  </div>,
   document.getElementById('root')
 );

@@ -16,10 +16,11 @@ const myStyles = {
 };
 
 export const MenuItem = (props) => {
+  const { text, url } = props;
   return (
     <li style={liEl}>
-      <a style={myStyles} href={props.url}>
-        {props.text}
+      <a style={myStyles} href={url}>
+        {text}
       </a>
     </li>
   );
