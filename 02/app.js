@@ -7,12 +7,13 @@ const root = document.querySelector("#root");
 class HeaderCl extends React.Component {
     render() {
         const headerStyle = {
-            background: "linear-gradient(to bottom, yellow, darkgreen)",
+            background: "linear-gradient(to bottom, #85C1E9, #3498DB)",
             padding: "10px",
             textAlign: "center",
-            border: "2px solid darkgreen",
+            border: "2px solid #3498DB",
             borderRadius: "10px",
             fontSize: "1.2em",
+            color: "#2C3E50",
         };
 
         return (
@@ -26,12 +27,13 @@ class HeaderCl extends React.Component {
 // Komponent funkcyjny
 const HeaderFn = () => {
     const headerStyle = {
-        background: "linear-gradient(to bottom, grey, lightgreen)",
+        background: "linear-gradient(to top, #AED6F1, #5DADE2)",
         padding: "10px",
         textAlign: "center",
-        border: "2px solid lightgreen",
+        border: "2px solid #5DADE2",
         borderRadius: "10px",
         fontSize: "1.2em",
+        color: "#2C3E50",
     };
 
     return (
