@@ -10,7 +10,7 @@ const test = { text: "Testowy link", url: "https://www.example.com" };
 const App = () => {
     return (
         <div>
-            <MenuItem iext={test.text} url={test/url} />
+            <MenuItem text={test.text} url={test.url} />
         </div>
     );
 };
