@@ -1,8 +1,6 @@
-import React from 'react';
-import {
-    createRoot
-} from 'react-dom/client';
-const root = createRoot(document.querySelector('#root'));
+import React from "react";
+import { createRoot } from "react-dom/client";
+const root = createRoot(document.querySelector("#root"));
 
 // root.render(
 //     React.createElement(
@@ -17,15 +15,15 @@ const root = createRoot(document.querySelector('#root'));
 //     )
 // );
 
-const HeaderCl = () => < h1 className = "title" > Moja pierwsza strona w React < /h1>;
+const HeaderCl = () => (
+  <h1 className="title"> Moja pierwsza strona w React </h1>
+);
 
 const App = () => {
-    return ( <
-        div >
-        <
-        HeaderCl / >
-        <
-        /div>
-    );
+  return (
+    <div>
+      <HeaderCl />
+    </div>
+  );
 };
-root.render( < App / > );
+root.render(<App />);
