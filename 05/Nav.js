@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
+import PropTypes from 'prop-types';
 
 const Nav = () => {
   return (
@@ -12,6 +13,10 @@ const Nav = () => {
       />
     </nav>
   );
+};
+Nav.propTypes = {
+  text: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default Nav;
