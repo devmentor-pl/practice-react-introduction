@@ -5,3 +5,5 @@ import {
 
 const root = createRoot(document.querySelector('#root'));
 root.render( < h1 > React działa! < /h1>);
+
+// sfargagraergaegaergearg
