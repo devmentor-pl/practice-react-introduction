@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Mateusz Bogolubow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Mateusz Bogolubow" />
     <title>devmentor.pl - React introduction - #02</title>
-</head>
-<body>
+    <style>
+      .rotating-border {
+        width: max-content;
+        background: linear-gradient(90deg, purple 50%, transparent 50%),
+          linear-gradient(90deg, purple 50%, transparent 50%),
+          linear-gradient(0deg, purple 50%, transparent 50%),
+          linear-gradient(0deg, purple 50%, transparent 50%);
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+        padding: 10px;
+        animation: border-dance 4s infinite linear;
+      }
+
+      @keyframes border-dance {
+        0% {
+          background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+        }
+        100% {
+          background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div id="root"></div>
-</body>
+  </body>
 </html>
