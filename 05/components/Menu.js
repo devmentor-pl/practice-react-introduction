@@ -3,15 +3,18 @@ import MenuItem from '../../03/components/MenuItem';
 
 class Menu extends React.Component {
     render() {
+        const { items } = this.props
         return (
                 <ul
-                    className="menuUlEl"
                     style={ulStyle}
->
-                    <MenuItem url="/home" text="Home" />
-                    <MenuItem url="/about" text="About" />
-                    <MenuItem url="/projects" text="Projects" />
-                    <MenuItem url="/contact" text="Contact" />
+                >
+                    {items.map(item => (
+                        <MenuItem
+                            key={item.id}
+                            text={item.text}
+                            url={item.url}
+                        />
+                    ))}
                 </ul>
         )
     }

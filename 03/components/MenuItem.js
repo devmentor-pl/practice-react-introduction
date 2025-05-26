@@ -1,5 +1,6 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
+import urlPropType from 'url-prop-type';
 class MenuItem extends React.Component {
     render() {
         const { text, url } = this.props;
@@ -15,6 +16,12 @@ class MenuItem extends React.Component {
             </li>
         )
     }
+}
+
+MenuItem.propTypes = {
+    text: PropTypes.string.isRequired,
+    url:  urlPropType.isRequired,
+
 }
 
 const liStyles = {
